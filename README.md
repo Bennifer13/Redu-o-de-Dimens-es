@@ -1,5 +1,4 @@
 # Reducao-de-Dimensoes
-Redução de Dimensão em Imagens em Redes Neurais
 
 Redução de Dimensionalidade em Imagens para Redes Neurais
 
