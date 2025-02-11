@@ -4,18 +4,14 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-# Carregar a imagem colorida
+# Lê a imagem colorida
 imagem_colorida = cv2.imread("./Documentos/Lena.jpeg")
 
-
-# Converter a imagem de BGR (OpenCV padrão) para RGB (para visualização correta)
-imagem_rgb = cv2.cvtColor(imagem_colorida, cv2.COLOR_BGR2RGB)
-
+# Aplica um desfoque suave (Gaussian Blur)
+suave = cv2.GaussianBlur(img, (7, 7), 0)
 
 # Converter para níveis de cinza
 imagem_cinza = cv2.cvtColor(imagem_colorida, cv2.COLOR_BGR2GRAY)
-
 
 # Aplicar binarização (thresholding)
 # Threshold escolhido: 128 (meio termo entre 0 e 255)
